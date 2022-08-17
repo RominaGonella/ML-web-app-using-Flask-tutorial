@@ -1,6 +1,6 @@
 # Resumen del proceso
 
-1. Se crea app para el modelo coffee_model.pkl usando Flask un formulario básico.
+1. Se crea app para el modelo coffee_model.pkl usando Flask y un formulario básico.
 
 2. El modelo toma valores de las siguientes variables:
 

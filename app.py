@@ -7,7 +7,7 @@ import numpy as np
 app = Flask(__name__) # __name__ es alias de nombre del archivo
 
 # se carga el modelo
-loaded_model = pickle.load(open('models/coffee_model.pkl', 'rb'))
+loaded_model = pickle.load(open('coffee_model.pkl', 'rb'))
 
 @app.route('/')
 def index():
