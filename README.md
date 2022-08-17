@@ -21,4 +21,4 @@
 * No es un café de especialidad.
 
 
-Link de la app: 
+Link de la app: https://coffee-model-flask.herokuapp.com/
