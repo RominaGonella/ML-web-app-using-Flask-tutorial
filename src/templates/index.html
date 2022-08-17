@@ -8,7 +8,7 @@
             <form action="{{ url_for('result')}}" method = "post">
                 SELECT COUNTRY
                 <label for="country_of_origin"></label>
-                <select name="country" id="country">
+                <select name="country" id="country" data-required="true" data-error-message = "country is required">
                     <option value="Brazil">Brazil</option>
                     <option value="Colombia">Colombia</option>
                     <option value="Guatemala">Guatemala</option>
@@ -19,7 +19,7 @@
                 <br>
                 <br>
                 SELECT VARIETY
-                <input type="radio" name="variety" id="Bourbon" value="Bourbon">
+                <input type="radio" name="variety" id="Bourbon" value="Bourbon" required checked>
                 <label for="Bourbon">Bourbon</label>
                 <input type="radio" name="variety" id="Catuai" value= "Catuai">
                 <label for="Catuai">Catuai</label>
@@ -31,33 +31,33 @@
                 <label for="Other">Other</label>
                 <br>
                 <br>
-                SELECT AROMA
-                <input type="number" step = "any" name = "aroma" id="aroma" value= "{{ request.form['aroma'] }}">
+                SELECT AROMA (0 TO 10)
+                <input type="number" step = "any" name = "aroma" id="aroma" value= "{{ request.form['aroma'] }}" min = "0" max = "10" required>
                 <label for="aroma"></label>
                 <br>
                 <br>
-                SELECT AFTERTASTE
-                <input type="number" step = "any" name = "aftertaste" id="aftertaste" value= "{{ request.form['aftertaste'] }}">
+                SELECT AFTERTASTE (0 TO 10)
+                <input type="number" step = "any" name = "aftertaste" id="aftertaste" value= "{{ request.form['aftertaste'] }}" min = "0" max = "10" required>
                 <label for="aftertaste"></label>
                 <br>
                 <br>
-                SELECT ACIDITY
-                <input type="number" step = "any" name = "acidity" id="acidity" value= "{{ request.form['acidity'] }}">
+                SELECT ACIDITY (0 TO 10)
+                <input type="number" step = "any" name = "acidity" id="acidity" value= "{{ request.form['acidity'] }}" min = "0" max = "10" required>
                 <label for="acidity"></label>
                 <br>
                 <br>
-                SELECT BODY
-                <input type="number" step = "any" name = "body" id="body" value= "{{ request.form['body'] }}">
+                SELECT BODY (0 TO 10)
+                <input type="number" step = "any" name = "body" id="body" value= "{{ request.form['body'] }}" min = "0" max = "10" required>
                 <label for="body"></label>
                 <br>
                 <br>
-                SELECT BALANCE
-                <input type="number" step = "any" name = "balance" id="balance" value= "{{ request.form['balance'] }}">
+                SELECT BALANCE (0 TO 10)
+                <input type="number" step = "any" name = "balance" id="balance" value= "{{ request.form['balance'] }}" min = "0" max = "10" required>
                 <label for="balance"></label>
                 <br>
                 <br>
-                SELECT MOISTURE
-                <input type="number" step = "any" name = "moisture" id="moisture" value= "{{ request.form['moisture'] }}">
+                SELECT MOISTURE (0 TO 1)
+                <input type="number" step = "any" name = "moisture" id="moisture" value= "{{ request.form['moisture'] }}" min = "0" max = "1" required>
                 <label for="moisture"></label>
                 <br>
                 <br>
